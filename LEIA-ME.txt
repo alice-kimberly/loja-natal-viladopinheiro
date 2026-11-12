@@ -1,0 +1,79 @@
+VILA DO PINHEIRO
+Documentação do Projeto
+
+1. Identificação do Projeto
+
+Nome: Vila do Pinheiro  
+Categoria: Loja virtual temática de Natal  
+Área: Desenvolvimento Web  
+Ano de desenvolvimento: 2026  
+Tipo de projeto: Projeto acadêmico.
+Desenvolvido por: Alice Kimberly
+
+ 2. Descrição
+
+A Vila do Pinheiro é um projeto de desenvolvimento web que consiste na criação de uma loja virtual fictícia especializada em produtos natalinos.
+
+A plataforma foi desenvolvida com uma identidade visual própria, inspirada no conceito de uma vila natalina, reunindo elementos gráficos e recursos visuais que remetem ao período de celebração do Natal.
+
+O site apresenta uma estrutura organizada em diferentes páginas, permitindo que os visitantes conheçam a loja, explorem sua história, consultem produtos e ofertas e acessem os canais de contato.
+
+ 3. Objetivo
+
+Aplicar os conhecimentos adquiridos na disciplina de Desenvolvimento Web por meio da criação de um site com múltiplas páginas, utilizando HTML5, CSS3 e JavaScript.
+
+O projeto também busca desenvolver habilidades relacionadas à organização de conteúdo, construção de interfaces, responsividade e implementação de funcionalidades interativas.
+
+ 4. Tecnologias Utilizadas
+
+- HTML5: estruturação do conteúdo e das páginas.
+- CSS3: estilização, identidade visual, layouts e responsividade.
+- JavaScript: implementação de funcionalidades e interações.
+
+ 5. Estrutura e Páginas do Site
+
+O site é composto por cinco páginas principais:
+
+- Index (Página Inicial): apresenta a loja, sua identidade visual e os principais destaques.
+- História: apresenta a proposta, o conceito e a história da Vila do Pinheiro.
+- Produtos: disponibiliza o catálogo de produtos natalinos, organizado por categorias.
+- Ofertas: apresenta produtos selecionados com condições promocionais.
+- Contato: disponibiliza informações e meios de comunicação com a loja.
+
+ 6. Funcionalidades
+
+Entre os principais recursos implementados, destacam-se:
+
+- Navegação entre as páginas do site.
+- Exibição de produtos organizados por categorias.
+- Pesquisa de produtos.
+- Carrinho de compras interativo.
+- Adição e remoção de produtos do carrinho.
+- Atualização do valor total da compra.
+- Apresentação de ofertas e descontos.
+- Recursos visuais interativos.
+- Contagem regressiva para o Natal.
+- Elementos sonoros associados às interações do usuário.
+
+ 7. Organização dos Arquivos
+
+Os arquivos do projeto estão organizados em diretórios e documentos separados, facilitando sua identificação e manutenção.
+
+- Arquivos HTML: responsáveis pela estrutura das páginas.
+- Arquivos CSS: responsáveis pela apresentação visual.
+- Arquivos JavaScript: responsáveis pelas funcionalidades.
+- Pasta `imagens/`: armazenamento dos recursos gráficos utilizados no site.
+- Pasta `sons/`: armazenamento dos recursos sonoros utilizados no site.
+
+ 8. Requisitos para Execução
+
+Para acessar o projeto, são necessários:
+
+- Navegador atualizado, como Google Chrome, Microsoft Edge ou Mozilla Firefox.
+- Arquivos completos do projeto.
+- Conexão com a internet para carregamento de recursos externos, quando aplicável.
+
+ 9. Instruções de Execução
+
+1. Faça o download dos arquivos do projeto.
+2. Abra algum dos arquivos de HTML

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em contato conosco</title>
+    <link rel="icon" type="image/x-icon" href="imagens/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+</head>
+<body>
+    
+    <header class="navbar" id="navbar">
+    <div class="navbar2">
+      <a href="index.html" class="logo">
+        <div class="imgnavbar" id="imgnavbar"><img src="imagens/logo.png" alt="logo"> </div>
+        <div class="titnav" id="titnav"><h1>Vila do Pinheiro</h1></div>
+      </a>
+
+      <nav class="navlinks" id="navlinks">
+        <a href="index.html">Início</a>
+        <a href="historia.html">Nossa história</a>
+        <a href="ofertas.html">Ofertas e categorias</a>
+        <a href="produtos.html">Produtos</a> 
+        <a href="contato.html">Contato</a>
+        <button id="abrirCarrinho" class="icone-carrinho">
+    🛒 Carrinho (<span id="quantidadeCarrinho">0</span>)
+</button>
+<section id="meuCarrinho">
+
+    <h2>Minha Sacola Encantada 🎄</h2>
+    <div id="listaCarrinho">
+        <p>Seu carrinho está vazio.</p>
+    </div>
+    <h3>Total: R$ <span id="totalCarrinho">0,00</span></h3>
+    <button id="limparCarrinho">Limpar carrinho</button>
+    <button id="fecharCarrinho">Continuar comprando</button>
+</section>
+        <button id="botaoNeve">❄</button>
+      </nav>
+    </div>
+    <button id="botaoMusica" onclick="controlarMusica()">
+    🎵 Tocar música
+</button>
+
+<audio id="musicaFundo" loop>
+    <source src="sons/musica_central.mp3" type="audio/mpeg">
+</audio>
+</header>
+
+<main>
+    <section class="inicio-cont" id="inicio-cont">
+        <div class="neve"></div>
+
+        <h1>Escreva a sua Cartinha</h1>
+        <fieldset>
+             <form>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div><br>
+
+        <div>
+            <label for="mensagem">Seu Pedido:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="30"></textarea>
+        </div><br>
+
+        <div>
+            <button type="submit">Enviar Cartinha</button>
+            <button type="reset">Limpar Tudo</button>
+        </div>
+
+    </form>
+        </fieldset>
+    </section>
+
+    <section>
+
+        <h2 class="contato-h2" id="contato-h2">Venha nos conhecer</h2>
+        <div class="info" id="info">
+            
+            <article class="info-card">            
+            <h3>E-mail</h3>
+            <p class="info_p">contato@viladopinheiro.com.br</p>
+            </article>
+
+            <article class="info-card">            
+            <h3>Atendimento</h3>
+            <p class="info_p">Seg. a Sex. das 9h às 18h.</p>
+            </article>
+
+            <article class="info-card">            
+            <h3>Telefone</h3>
+            <p class="info_p">(19) 93887-1234</p> 
+            </article>
+
+            <article class="info-card">
+            <h3>Localização</h3>
+            <p class="info_p">Av. Santana, 1000 - Centro Hortolândia - SP, 13184-160</p>
+            </article>
+        </div>
+            <img src="imagens/mapa.png" alt="maps" class="info-img" id="info-img">
+        
+
+    </section>
+</main>   
+
+
+<script src="produtos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

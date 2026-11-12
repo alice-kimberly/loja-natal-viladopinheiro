@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vila do Pinheiro</title>
+    <link rel="icon" type="image/x-icon" href="imagens/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    
+</head>
+<body>
+
+ <header class="navbar" id="navbar">
+    <div class="navbar2">
+      <a href="index.html" class="logo">
+        <div class="imgnavbar" id="imgnavbar"><img src="imagens/logo.png" alt="logo"> </div>
+        <div class="titnav" id="titnav"><h1>Vila do Pinheiro</h1></div>
+      </a>
+
+      <nav class="navlinks" id="navlinks">
+        <a href="index.html">Início</a>
+        <a href="historia.html">Nossa história</a>
+        <a href="ofertas.html">Ofertas e categorias</a>
+        <a href="produtos.html">Produtos</a> 
+        <a href="contato.html">Contato</a>
+<button id="abrirCarrinho" class="icone-carrinho">
+    🛒 Carrinho (<span id="quantidadeCarrinho">0</span>)
+</button>
+
+<section id="meuCarrinho">
+    <h2>Minha Sacola Encantada 🎄</h2>
+    <div id="listaCarrinho">
+        <p>Seu carrinho está vazio.</p>
+    </div>
+    <h3>Total: R$ <span id="totalCarrinho">0,00</span></h3>
+    <button id="limparCarrinho">Limpar carrinho</button>
+    <button id="fecharCarrinho">Continuar comprando</button>
+</section>      
+<button id="botaoNeve">❄</button>
+      </nav>
+    </div>
+    <button id="botaoMusica" onclick="controlarMusica()">
+    🎵 Tocar música
+</button>
+
+<audio id="musicaFundo" loop>
+    <source src="sons/musica_central.mp3" type="audio/mpeg">
+</audio>
+  </header>
+  <main>
+
+    <div class="inicio" id="inicio">
+
+        <div class="camadas-parallax">
+
+        <img src="imagens/01_fundo_ceu_montanhas.png"
+             class="camada fundo" alt="">
+
+        <img src="imagens/02_meio_vila.png"
+             class="camada meio" alt="">
+
+        <img src="imagens/03_frente_placa_ponte.png"
+             class="camada frente" alt="">
+
+    </div>
+
+
+        <div class="neve"></div>
+
+      <div class="textinicio" id="textinicio">
+        <h1>O Natal mora nos pequenos detalhes!</h1> 
+      
+      <h4>Entre pinheiros, luzes e sonhos, descubra <br> enfeites e presentes feitos para transformar <br> sua casa em um lugar ainda mais especial.</h4>
+      </div>
+
+    </div>
+
+<section class="slideshow" id="slideshow">
+
+    <h2>Encantos da Vila do Pinheiro</h2>
+    <p>Descubra um pouco da magia do nosso Natal!</p>
+
+    <div class="carrossel">
+
+        <div class="slides">
+            <a href="ofertas.html">
+              <img src="imagens/Promoções Especiais de Natal na Vila do Pinheiro.png" alt="Ofertas">
+            </a>
+            
+            <a href="contato.html">
+              <img src="imagens/Convite de Natal da Vila do Pinheiro.png" alt="Faça seu pedido">
+            </a>
+
+            <a href="historia.html">
+              <img src="imagens/conhecervila.png" alt="Vila de Natal">
+            </a>
+        </div>
+
+        <button class="seta anterior" onclick="mudarSlide(-1)">❮</button>
+        <button class="seta proximo" onclick="mudarSlide(1)">❯</button>
+
+    </div>
+
+    <div class="indicadores">
+        <span onclick="irSlide(0)"></span>
+        <span onclick="irSlide(1)"></span>
+        <span onclick="irSlide(2)"></span>
+    </div>
+
+</section>
+
+<script src="produtos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

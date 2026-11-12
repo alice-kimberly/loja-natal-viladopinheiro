@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conheça a nossa história</title>
+    <link rel="icon" type="image/x-icon" href="imagens/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+</head>
+<body>
+
+    <header class="navbar" id="navbar">
+        
+        <div class="navbar2">
+            <a href="index.html" class="logo">
+            <div class="imgnavbar" id="imgnavbar"><img src="imagens/logo.png" alt="logo"> </div>
+            <div class="titnav" id="titnav"><h1>Vila do Pinheiro</h1></div>
+            </a>
+
+            <nav class="navlinks" id="navlinks">
+            <a href="index.html">Início</a>
+            <a href="historia.html">Nossa história</a>
+            <a href="ofertas.html">Ofertas e categorias</a>
+            <a href="produtos.html">Produtos</a> 
+            <a href="contato.html">Contato</a>
+            <button id="abrirCarrinho" class="icone-carrinho">
+    🛒 Carrinho (<span id="quantidadeCarrinho">0</span>)
+</button>
+
+<section id="meuCarrinho">
+    <h2>Minha Sacola Encantada 🎄</h2>
+    <div id="listaCarrinho">
+        <p>Seu carrinho está vazio.</p>
+    </div>
+    <h3>Total: R$ <span id="totalCarrinho">0,00</span></h3>
+    <button id="limparCarrinho">Limpar carrinho</button>
+    <button id="fecharCarrinho">Continuar comprando</button>
+</section>
+            <button id="botaoNeve">❄</button>
+            </nav>
+        </div>
+        <button id="botaoMusica" onclick="controlarMusica()">
+    🎵 Tocar música
+</button>
+
+<audio id="musicaFundo" loop>
+    <source src="sons/musica_central.mp3" type="audio/mpeg">
+</audio>
+    </header>
+
+        <section class="inicio_h" id="inicio_h">
+            <div class="neve"></div>
+            <h1>A lenda do Pinheiro</h1>
+            <div class="textini_h">
+                <p>A Vila do Pinheiro nasceu de um sonho: transformar o espírito natalino em algo que pudesse estar presente em cada lar. <br> 
+                Tudo começou em uma pequena vila iluminada por luzes douradas, onde famílias se reuniam para celebrar o Natal, trocar presentes e compartilhar momentos especiais. <br>
+                Inspirada nessa tradição, nossa loja foi criada para levar um pedacinho dessa magia até você. <br>
+                Aqui, cada enfeite, decoração e miniatura carrega uma história e um pouco do encanto dessa época tão especial. <br>
+                Mais do que uma loja, somos um lugar onde a magia do Natal ganha vida! </p>
+                
+            <img src="imagens/inicio.jpeg" alt="vila">
+            </div>
+            </section>
+            <div class="missao" id="missao">
+            <article class="missao-card">            
+            <h3>Missão</h3>
+            <p class="missao_p">Levar encanto, alegria e espírito natalino para cada lar.</p>
+            </article>
+
+            <article class="missao-card">            
+            <h3>Visão</h3>
+            <p class="missao_p">Ser uma loja reconhecida por tornar cada Natal mais especial.</p>
+            </article>
+
+            <article class="missao-card">            
+            <h3>Valores</h3>
+            <p class="missao_p">Carinho, criatividade, qualidade, união e tradição.</p>
+            </article>
+            </div>
+        
+    
+        <section class="contagem" id="contagem">
+    <h2>Faltam para o Natal</h2>
+    <div class="contagem-caixas" id="contagemCaixas">
+        <div class="caixa"><span id="dias">0</span><small>dias</small></div>
+        <div class="caixa"><span id="horas">0</span><small>horas</small></div>
+        <div class="caixa"><span id="minutos">0</span><small>min</small></div>
+        <div class="caixa"><span id="segundos">0</span><small>seg</small></div>
+    </div>
+    <p id="msgNatal"></p>
+</section>
+
+<footer>
+    <div class="aluno" id="aluno">
+        <article class="aluno-card">  
+            <img src="imagens/eu.png" alt="" class="cardimg">          
+            <h3>Alice Kimberly</h3>
+            <p>Responsável por todo o projeto.</p>
+        </article>
+    </div>
+</footer>
+
+<script src="produtos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

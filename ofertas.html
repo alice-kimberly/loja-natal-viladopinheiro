@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra as ofertas mágicas</title>
+    <link rel="icon" type="image/x-icon" href="imagens/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+    <div class="navbar2">
+      <a href="index.html" class="logo">
+        <div class="imgnavbar" id="imgnavbar"><img src="imagens/logo.png" alt="logo"> </div>
+        <div class="titnav" id="titnav"><h1>Vila do Pinheiro</h1></div>
+      </a>
+
+      <nav class="navlinks" id="navlinks">
+        <a href="index.html">Início</a>
+        <a href="historia.html">Nossa história</a>
+        <a href="ofertas.html">Ofertas e categorias</a>
+        <a href="produtos.html">Produtos</a> 
+        <a href="contato.html">Contato</a>
+       <button id="abrirCarrinho" class="icone-carrinho">
+    🛒 Carrinho (<span id="quantidadeCarrinho">0</span>)
+</button>
+
+<section id="meuCarrinho">
+    <h2>Minha Sacola Encantada 🎄</h2>
+    <div id="listaCarrinho">
+        <p>Seu carrinho está vazio.</p>
+    </div>
+    <h3>Total: R$ <span id="totalCarrinho">0,00</span></h3>
+    <button id="limparCarrinho">Limpar carrinho</button>
+    <button id="fecharCarrinho">Continuar comprando</button>
+</section>
+        <button id="botaoNeve">❄</button>
+      </nav>
+    </div>
+    <button id="botaoMusica" onclick="controlarMusica()">
+    🎵 Tocar música
+</button>
+
+<audio id="musicaFundo" loop>
+    <source src="sons/musica_central.mp3" type="audio/mpeg">
+</audio>
+</header>
+
+<main>
+    <section class="inicio_o" id="inicio_o">
+      <div class="neve"></div>
+
+        <h1>Nossa galeria Natalina</h1>
+
+      <div class="categ" id="categ">
+          <a href="produtos.html" >
+          <article class="categ-card">            
+          <img src="imagens/enfeites-removebg-preview.png" alt="" class="categ-img">
+          <div>            
+          <h3>Enfeites Natalinos</h3>
+          <p>Enfeites para deixar a sua árvore de natal com o seu estilo natalino.</p>
+          </div> </a>
+          </article>
+
+          <a href="produtos.html">
+          <article class="categ-card">            
+          <img src="imagens/decoracoes-removebg-preview.png" alt="" class="categ-img">
+          <div>
+            <h3>Decorações Natalinas</h3>
+            <p>Detalhes que deixam o seu Natal do jeito que você sempre sonhou.</p>
+          </div>
+          </article></a>
+
+          <a href="produtos.html">
+          <article class="categ-card">
+          <img src="imagens/mesa_encantada-removebg-preview.png" alt="" class="categ-img">
+          <div>
+            <h3>Mesa encantada</h3>
+            <p>A decoração em cada parte do seu dia especial.</p>
+          </div>
+          </article></a>
+
+          <a href="produtos.html">
+          <article class="categ-card">
+          <img src="imagens/mini_vila-removebg-preview.png" alt="" class="categ-img">
+          <div>
+            <h3>Mini vila do Pinheiro</h3>
+            <p>Tenha um pouco do que você mais gostar no seu Natal.</p>
+          </div>
+          </article></a>
+
+          <a href="produtos.html">
+          <article class="categ-card">
+          <img src="imagens/tradicoes-removebg-preview.png" alt="" class="categ-img">
+          <div>
+            <h3>Tradições Natalinas</h3>
+            <p>Tenha os costumes Natalinos do jeito que você mais gostar.</p>
+          </div>
+        </article></a>
+    </section>
+
+    <h1 class="h1of" id="h1of">Ofertas Imperdíveis</h1>
+    <section class="ofertas" id="ofertas">
+
+    <div class="card-ofertas">
+    <img src="imagens/enfeites_encantados_sem_botao.png" alt="Enfeite de Natal">
+    <h2>Enfeite Especial</h2>
+    <a href="produtos.html#enfeites"><button>Ver Produto</button></a>
+      </div>
+
+      <div class="card-ofertas">
+    <img src="imagens/guirlandas_magicas_sem_botao.png" alt="Guirlanda de Natal">
+    <h2>Guirlandas Mágicas</h2>
+    <a href="produtos.html#decoracao"><button>Ver Produto</button></a>
+      </div>
+
+      <div class="card-ofertas">
+    <img src="imagens/mesa_encantada_sem_botao.png" alt="Mesa de Natal">
+    <h2>Mesa Encantada</h2>
+    <a href="produtos.html#mesa"><button>Ver Produto</button></a>
+      </div>
+
+      <div class="card-ofertas">
+    <img src="imagens/miniaturas_natalinas_sem_botao.png" alt="Miniatura de Natal">
+    <h2>Miniaturas da Vila</h2>
+    <a href="produtos.html#miniaturas"><button>Ver Produto</button></a>
+      </div>
+
+    </section>
+
+    <footer class="botconhecer" id="botconhecer"> 
+      <a href="produtos.html">
+        <button>Conheça os nossos produtos →</button>
+      </a>
+    </footer>
+</main>
+    
+<script src="produtos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

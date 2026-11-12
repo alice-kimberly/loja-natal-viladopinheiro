@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conheça os nossos produtos</title>
+    <link rel="icon" type="image/x-icon" href="imagens/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+</head>
+<body>
+    
+<header class="navbar" id="navbar">
+    <div class="navbar2">
+      <a href="index.html" class="logo">
+        <div class="imgnavbar" id="imgnavbar"><img src="imagens/logo.png" alt="logo"> </div>
+        <div class="titnav" id="titnav"><h1>Vila do Pinheiro</h1></div>
+      </a>
+
+      <nav class="navlinks" id="navlinks">
+        <a href="index.html">Início</a>
+        <a href="historia.html">Nossa história</a>
+        <a href="ofertas.html">Ofertas e categorias</a>
+        <a href="produtos.html">Produtos</a> 
+        <a href="contato.html">Contato</a>
+        <button id="abrirCarrinho" class="icone-carrinho">
+    🛒 Carrinho (<span id="quantidadeCarrinho">0</span>)
+</button>
+
+<section id="meuCarrinho">
+    <h2>Minha Sacola Encantada 🎄</h2>
+    <div id="listaCarrinho">
+        <p>Seu carrinho está vazio.</p>
+    </div>
+    <h3>Total: R$ <span id="totalCarrinho">0,00</span></h3>
+    <button id="limparCarrinho">Limpar carrinho</button>
+    <button id="fecharCarrinho">Continuar comprando</button>
+</section>
+        <button id="botaoNeve">❄</button>
+      </nav>
+    </div>
+
+<button id="botaoMusica" onclick="controlarMusica()">
+    🎵 Tocar música
+</button>
+
+<audio id="musicaFundo" loop>
+    <source src="sons/musica_central.mp3" type="audio/mpeg">
+</audio>
+</header>
+
+<main>
+    <section class="inicio-p" id="inicio-p">
+        <div class="neve"></div>
+         <div class="tipos" id="tipos">
+            <a href="#todos"><button>Todos os encantos</button></a>
+            <a href="#mesa"><button>Mesa Encantada</button></a>
+            <a href="#enfeite"><button>Enfeites Natalinos</button></a>
+            <a href="#tradicao"><button>Tradições Natalinas</button></a>
+            <a href="#decoracao"><button>Decorações</button></a>
+            <a href="#miniaturas"><button>Miniaturas da vila</button></a>
+            </div>
+         <div class="pesquisa">
+    <input
+        type="text"
+        id="campoPesquisa"
+        placeholder="Pesquisar produtos..."
+        oninput="pesquisarProdutos()"
+    >
+    <button onclick="pesquisarProdutos()">🔎</button>   
+    </section>
+
+    <section class="mesa" id="mesa">
+      <div class="produto">
+            <article class="produto-card"  data-preco="89.90">
+            <img src="imagens/06_mesa_encantada/01_mesa_com_velas.jpg" alt="velas">            
+            <h3 class="produto-conteudo">Velas Natalinas</h3>
+            <p>Centro de Mesa Dupla de Velas com Guirlanda de Frutas Vermelhas.</p>
+            <h4 class="preco">R$ 89,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+
+      <div class="produto">
+            <article class="produto-card"  data-preco="34.90">
+            <img src="imagens/06_mesa_encantada/02_prato_com_guardanapo.jpg" alt="guardanapo">            
+            <h3 class="produto-conteudo">Kit Guardanapo e Argola</h3>
+            <p>Kit Guardanapo de Tecido Vermelho e Porta-Guardanapo Pinheiro.</p>
+            <h4 class="preco">R$ 34,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+       <div class="produto">
+            <article class="produto-card"  data-preco="99.90">
+            <img src="imagens/06_mesa_encantada/03_tacas.jpg" alt="tacas">            
+            <h3 class="produto-conteudo">Jogo de Taças Cristal</h3>
+            <p>Jogo de Taças Cristalizadas para Espumante Brinde de Natal (3 un.).</p>
+            <h4 class="preco">R$ 99,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+           
+        <div class="produto">
+            <article class="produto-card"  data-preco="54.90">
+            <img src="imagens/06_mesa_encantada/04_vela_com_arranjo.jpg" alt="vela">            
+            <h3 class="produto-conteudo">Castiçal com Pinha</h3>
+            <p>Castiçal Centro de Mesa Vela Pilar com Pinha e Frutas Vermelhas.</p>
+            <h4 class="preco">R$ 54,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="119.90">
+            <img src="imagens/06_mesa_encantada/05_arvore_sob_campanula.jpg" alt="arvore">            
+            <h3 class="produto-conteudo">Redoma Árvore de Natal</h3>
+            <p>Redoma de Vidro com Base Amadeirada e Mini Árvore de Natal.</p>
+            <h4 class="preco">R$ 119,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="129.90">
+            <img src="imagens/06_mesa_encantada/06_cupcakes.jpg" alt="boleira">            
+            <h3 class="produto-conteudo">Boleira 2 Andares Natal</h3>
+            <p>Boleira Dois Andares Dourada com Cupcakes Decorativos de Natal.</p>
+            <h4 class="preco">R$ 129,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="109.90">
+            <img src="imagens/06_mesa_encantada/07_bule_e_xicara.jpg" alt="bule">            
+            <h3 class="produto-conteudo">Conjunto Bule e Xícara</h3>
+            <p>Conjunto Bule e Xícara em Cerâmica Vermelha Flocos de Neve.</p>
+            <h4 class="preco">R$ 109,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="39.90">
+            <img src="imagens/06_mesa_encantada/08_caneca_arvore_de_natal.jpg" alt="caneca">            
+            <h3 class="produto-conteudo">Caneca Pinheiro de Natal</h3>
+            <p>Caneca de Cerâmica Pinheiro Festivo com Borda Vermelha.</p>
+            <h4 class="preco">R$ 39,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="74.90">
+            <img src="imagens/06_mesa_encantada/09_trilho_de_mesa_com_rena.jpg" alt="trilho">            
+            <h3 class="produto-conteudo">Trilho de Mesa Xadrez</h3>
+            <p>Trilho de Mesa Xadrez Escocês Natalino com Fios Dourados.</p>
+            <h4 class="preco">R$ 74,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="29.90">
+            <img src="imagens/06_mesa_encantada/10_arranjo_verde_com_bagas.jpg" alt="arranjo">            
+            <h3 class="produto-conteudo">Mini Arranjo Natalino</h3>
+            <p>Mini Arranjo de Mesa Pinhas Naturais e Frutas Vermelhas.</p>
+            <h4 class="preco">R$ 29,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+         </div>       
+  </section>
+
+  <section class="enfeite">
+      <div class="produto" id="produto">
+            <article class="produto-card"  data-preco="24.90">
+            <img src="imagens/02_enfeites_natalinos/01_bola_xadrez.jpg" alt="bola_xadrez">            
+            <h3 class="produto-conteudo">Bola Xadrez Escocesa</h3>
+            <p>Enfeite elegante em tons de vermelho e verde, perfeito para trazer um charme clássico à sua árvore de Natal.</p>
+            <h4 class="preco">R$ 24,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+
+      <div class="produto">
+            <article class="produto-card"  data-preco="39.90">
+            <img src="imagens/02_enfeites_natalinos/02_bola_com_casinha.jpg" alt="bola_casinha">            
+            <h3 class="produto-conteudo">Bola Encantada Vila Nevada</h3>
+            <p>Uma pequena vila de inverno dentro de uma esfera de vidro, trazendo toda a magia do Natal para sua decoração.</p>
+            <h4 class="preco">R$ 39,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+       <div class="produto">
+            <article class="produto-card"  data-preco="19.90">
+            <img src="imagens/02_enfeites_natalinos/03_estrela_vermelha.jpg" alt="estrela_vermelha">            
+            <h3 class="produto-conteudo">Estrela Brilhante Vermelha</h3>
+            <p>Estrela vermelha com glitter que ilumina sua árvore e deixa cada detalhe ainda mais especial.</p>
+            <h4 class="preco">R$ 19,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+           
+        <div class="produto">
+            <article class="produto-card"  data-preco="14.90">
+            <img src="imagens/02_enfeites_natalinos/04_bengala_doce.jpg" alt="bengala_doce">            
+            <h3 class="produto-conteudo">Bengala Doce de Natal</h3>
+            <p>Inspirada nas tradicionais bengalas natalinas, combina vermelho e branco para uma decoração divertida e charmosa.</p>
+            <h4 class="preco">R$ 14,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="29.90">
+            <img src="imagens/02_enfeites_natalinos/05_boneco_de_neve.jpg" alt="boneco_neve">            
+            <h3 class="produto-conteudo">Boneco de Neve Noel</h3>
+            <p>Um simpático boneco de neve com cachecol vermelho, perfeito para espalhar alegria e espírito natalino.</p>
+            <h4 class="preco">R$ 29,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="17.90">
+            <img src="imagens/02_enfeites_natalinos/06_biscoito_de_gengibre.jpg" alt="biscoito_gengibre">            
+            <h3 class="produto-conteudo">Biscoito Gingerbread</h3>
+            <p>Delicado enfeite em formato de biscoito de gengibre, trazendo um toque doce e divertido à sua árvore.</p>
+            <h4 class="preco">R$ 17,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="22.90">
+            <img src="imagens/02_enfeites_natalinos/07_meia_de_natal.jpg" alt="meia_natal">            
+            <h3 class="produto-conteudo">Meia Natalina de Feltro</h3>
+            <p>Meia vermelha com detalhes brancos e verdes, ideal para deixar sua decoração ainda mais aconchegante.</p>
+            <h4 class="preco">R$ 22,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="32.90">
+            <img src="imagens/02_enfeites_natalinos/08_rena.jpg" alt="rena">            
+            <h3 class="produto-conteudo">Rena Encantada</h3>
+            <p>Uma charmosa rena com nariz vermelho e cachecol xadrez, trazendo o encanto do Natal para sua casa.</p>
+            <h4 class="preco">R$ 32,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="34.90">
+            <img src="imagens/02_enfeites_natalinos/09_presente.jpg" alt="presente">            
+            <h3 class="produto-conteudo">Presente Dourado Decorativo</h3>
+            <p>Miniatura de presente vermelho com laço dourado, perfeita para adicionar brilho e sofisticação à árvore.</p>
+            <h4 class="preco">R$ 34,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="27.90">
+            <img src="imagens/02_enfeites_natalinos/10_bola_com_arvore.jpg" alt="bola_arvore">            
+            <h3 class="produto-conteudo">Bola Árvore de Natal</h3>
+            <p>Enfeite delicado com uma árvore natalina em relevo, ideal para quem ama os detalhes tradicionais do Natal.</p>
+            <h4 class="preco">R$ 27,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>        
+    </section>
+
+  <section class="tradicao" id="tradicao">
+      <div class="produto">
+            <article class="produto-card"  data-preco="39.90">
+            <img src="imagens/05_tradicoes_de_natal/01_livro_natalino.jpg" alt="livro">            
+            <h3 class="produto-conteudo">Livro Decorativo Natal</h3>
+            <p>Livro Decorativo Contos de Natal com Pinheiro Dourado.</p>
+            <h4 class="preco">R$ 39,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+
+      <div class="produto">
+            <article class="produto-card"  data-preco="14.90">
+            <img src="imagens/05_tradicoes_de_natal/02_carta_com_selo.jpg" alt="carta">            
+            <h3 class="produto-conteudo">Carta Papai Noel Selada</h3>
+            <p>Carta para o Papai Noel com Selo de Cera Floco de Neve.</p>
+            <h4 class="preco">R$ 14,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+       <div class="produto">
+            <article class="produto-card"  data-preco="49.90">
+            <img src="imagens/05_tradicoes_de_natal/03_caneca_papai_noel.jpg" alt="caneca">            
+            <h3 class="produto-conteudo">Caneca 3D Papai Noel</h3>
+            <p>Caneca Cerâmica 3D Papai Noel Rosto em Relevo.</p>
+            <h4 class="preco">R$ 49,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+           
+        <div class="produto">
+            <article class="produto-card"  data-preco="24.90">
+            <img src="imagens/05_tradicoes_de_natal/04_biscoitos_de_gengibre.jpg" alt="biscoito">            
+            <h3 class="produto-conteudo">Kit Biscoitos Gingerbread</h3>
+            <p>Kit Biscoitos Gingerbread Artesanais Decorados (3 un.).</p>
+            <h4 class="preco">R$ 24,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="69.90">
+            <img src="imagens/05_tradicoes_de_natal/05_casinha_de_gengibre.jpg" alt="casinha_gengibre">            
+            <h3 class="produto-conteudo">Casinha Gingerbread LED</h3>
+            <p>Casinha de Biscoito Gingerbread Iluminada com Glacê.</p>
+            <h4 class="preco">R$ 69,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="22.90">
+            <img src="imagens/05_tradicoes_de_natal/06_saco_de_presentes.jpg" alt="saco">            
+            <h3 class="produto-conteudo">Saco de Veludo Natal</h3>
+            <p>Saco de Presente Veludo Vermelho Pinheiro Dourado.</p>
+            <h4 class="preco">R$ 22,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="15.90">
+            <img src="imagens/05_tradicoes_de_natal/07_pirulito_natalino.jpg" alt="pirulito">            
+            <h3 class="produto-conteudo">Pirulito Candy Cane</h3>
+            <p>Enfeite Pirulito Candy Cane Espiral com Laço.</p>
+            <h4 class="preco">R$ 15,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="19.90">
+            <img src="imagens/05_tradicoes_de_natal/08_saquinho_de_biscoitos.jpg" alt="saco_biscoito">            
+            <h3 class="produto-conteudo">Saquinho de Cookies</h3>
+            <p>Saquinho Presente Cookies Natalinos com Laço de Cetim.</p>
+            <h4 class="preco">R$ 19,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="38.90">
+            <img src="imagens/05_tradicoes_de_natal/09_placa_paz_amor_esperanca_natal.jpg" alt="placa">            
+            <h3 class="produto-conteudo">Placa de Mesa Natal</h3>
+            <p>Placa Decorativa de Mesa Estrela Paz, Amor e Esperança.</p>
+            <h4 class="preco">R$ 38,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="59.90">
+            <img src="imagens/05_tradicoes_de_natal/10_botas_do_papai_noel.jpg" alt="bota">            
+            <h3 class="produto-conteudo">Botas do Papai Noel</h3>
+            <p>Enfeite de Mesa Pernas e Botas do Papai Noel.</p>
+            <h4 class="preco">R$ 59,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article> 
+        </div>       
+    </section>    
+
+<section class="decoracao" id="decoracao">
+      <div class="produto">
+            <article class="produto-card"  data-preco="24.90">
+            <img src="imagens/03_decoracoes_de_natal/01_guirlanda_com_laco.jpg" alt="guirlanda">            
+            <h3 class="produto-conteudo">Mini Guirlanda com Laço</h3>
+            <p>Mini Guirlanda Clássica com Laço de Veludo e Pinhas.</p>
+            <h4 class="preco">R$ 24,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+
+      <div class="produto">
+            <article class="produto-card"  data-preco="34.90">
+            <img src="imagens/03_decoracoes_de_natal/02_bola_com_luzes.jpg" alt="bola_luzer">            
+            <h3 class="produto-conteudo">Bola LED Fio de Fada</h3>
+            <p>Esfera Cristalina Iluminada com Fio de Fada LED.</p>
+            <h4 class="preco">R$ 34,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+       <div class="produto">
+            <article class="produto-card"  data-preco="16.90">
+            <img src="imagens/03_decoracoes_de_natal/03_laco_de_veludo.jpg" alt="laco">            
+            <h3 class="produto-conteudo">Laço de Veludo Vermelho</h3>
+            <p>Laço de Veludo Vermelho com Brilho Festivo.</p>
+            <h4 class="preco">R$ 16,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+           
+        <div class="produto">
+            <article class="produto-card"  data-preco="22.90">
+            <img src="imagens/03_decoracoes_de_natal/04_pinheiro_nevado.jpg" alt="pinheiro">            
+            <h3 class="produto-conteudo">Mini Pinheiro Nevado</h3>
+            <p>Mini Pinheiro Nevado Rústico para Árvore.</p>
+            <h4 class="preco">R$ 22,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="19.90">
+            <img src="imagens/03_decoracoes_de_natal/05_flor_de_natal.jpg" alt="flor">            
+            <h3 class="produto-conteudo">Flor Bico-de-Papagaio</h3>
+            <p>Flor Bico-de-Papagaio Aveludada com Miolo Dourado.</p>
+            <h4 class="preco">R$ 19,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="49.90">
+            <img src="imagens/03_decoracoes_de_natal/06_lanterna.jpg" alt="lanterna">            
+            <h3 class="produto-conteudo">Lanterna Natalina LED</h3>
+            <p>Lanterna Vintage Iluminada Floresta de Natal.</p>
+            <h4 class="preco">R$ 49,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="32.90">
+            <img src="imagens/03_decoracoes_de_natal/07_soldadinho.jpg" alt="soldadinho">            
+            <h3 class="produto-conteudo">Quebra-Nozes Vermelho</h3>
+            <p>Quebra-Nozes Clássico Real Vermelho e Dourado.</p>
+            <h4 class="preco">R$ 32,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="18.90">
+            <img src="imagens/03_decoracoes_de_natal/08_biscoito_de_gengibre.jpg" alt="gengibre_biscoito">            
+            <h3 class="produto-conteudo">Pingente Gingerbread</h3>
+            <p>Pingente Gingerbread Sorriso Doce.</p>
+            <h4 class="preco">R$ 18,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="44.90">
+            <img src="imagens/03_decoracoes_de_natal/09_globo_de_neve.jpg" alt="globo">            
+            <h3 class="produto-conteudo">Globo de Neve Suspenso</h3>
+            <p>Globo de Neve Suspenso Papai Noel e Pinheiro.</p>
+            <h4 class="preco">R$ 44,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="21.90">
+            <img src="imagens/03_decoracoes_de_natal/10_meia_natalina.jpg" alt="mini_meia">            
+            <h3 class="produto-conteudo">Mini Meia Natalina</h3>
+            <p>Mini Meia de Natal Floco de Neve com Pelúcia.</p>
+            <h4 class="preco">R$ 21,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>  
+        </div>      
+    </section>  
+    
+    <section class="miniaturas" id="miniaturas">
+      <div class="produto">
+            <article class="produto-card"  data-preco="49.90">
+            <img src="imagens/04_vila_de_natal/01_casinha_natalina.jpg" alt="casinha">            
+            <h3 class="produto-conteudo">Chalé Nevado LED</h3>
+            <p>Chalé Alpino Iluminado com Telhado Nevado.</p>
+            <h4 class="preco">R$ 49,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+
+      <div class="produto">
+            <article class="produto-card"  data-preco="54.90">
+            <img src="imagens/04_vila_de_natal/02_igreja_natalina.jpg" alt="igreja">            
+            <h3 class="produto-conteudo">Capela Natalina LED</h3>
+            <p>Capela Vila de Natal Iluminada com Guirlanda.</p>
+            <h4 class="preco">R$ 54,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+       <div class="produto">
+            <article class="produto-card"  data-preco="52.90">
+            <img src="imagens/04_vila_de_natal/03_casinha_decorada.jpg" alt="casinha2">            
+            <h3 class="produto-conteudo">Confeitaria Natalina LED</h3>
+            <p>Confeitaria de Natal Iluminada Toldo Listra Doce.</p>
+            <h4 class="preco">R$ 52,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+           
+        <div class="produto">
+            <article class="produto-card"  data-preco="44.90">
+            <img src="imagens/04_vila_de_natal/04_barraca_de_natal.jpg" alt="barraca">            
+            <h3 class="produto-conteudo">Quiosque de Natal</h3>
+            <p>Quiosque Feira de Natal com Presentes e Pinheiro.</p>
+            <h4 class="preco">R$ 44,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="36.90">
+            <img src="imagens/04_vila_de_natal/05_trenzinho_natalino.jpg" alt="trem">            
+            <h3 class="produto-conteudo">Trenzinho Expresso Polar</h3>
+            <p>Locomotiva Expresso Polar Vermelha e Dourada.</p>
+            <h4 class="preco">R$ 36,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto" >
+            <article class="produto-card"  data-preco="29.90">
+            <img src="imagens/04_vila_de_natal/06_papai_noel.jpg" alt="papainoel">            
+            <h3 class="produto-conteudo">Pingente Papai Noel</h3>
+            <p>Pingente Papai Noel Clássico com Pinheiro.</p>
+            <h4 class="preco">R$ 29,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto" >
+            <article class="produto-card"  data-preco="29.90">
+            <img src="imagens/04_vila_de_natal/07_mamae_noel.jpg" alt="mamaenoel">            
+            <h3 class="produto-conteudo">Pingente Mamãe Noel</h3>
+            <p>Pingente Mamãe Noel Vestido de Gala Vermelho.</p>
+            <h4 class="preco">R$ 29,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>    
+            
+        <div class="produto" >
+            <article class="produto-card"  data-preco="26.90">
+            <img src="imagens/04_vila_de_natal/08_tambor_natalino.jpg" alt="tambor">            
+            <h3 class="produto-conteudo">Tambor Natalino Dourado</h3>
+            <p>Tambor Imperial Dourado com Flocos de Neve.</p>
+            <h4 class="preco">R$ 26,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>
+            
+        <div class="produto" >
+            <article class="produto-card"  data-preco="34.90">
+            <img src="imagens/04_vila_de_natal/09_cavalinho_de_balanco.jpg" alt="cavalo">            
+            <h3 class="produto-conteudo">Cavalinho de Balanço</h3>
+            <p>Cavalinho de Balanço Vintage Encanto de Natal.</p>
+            <h4 class="preco">R$ 34,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>
+        </div>
+            
+        <div class="produto">
+            <article class="produto-card"  data-preco="32.90">
+            <img src="imagens/04_vila_de_natal/10_soldadinho_quebra_nozes.jpg" alt="quebra_nozes">            
+            <h3 class="produto-conteudo">Quebra-Nozes Guarda Real</h3>
+            <p>Quebra-Nozes Guarda Real Uniforme Verde e Vermelho.</p>
+            <h4 class="preco">R$ 32,90</h4>
+            <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+            </article>    
+         </div>   
+    </section>  
+</main>    
+<script src="produtos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
